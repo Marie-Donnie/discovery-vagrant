@@ -14,6 +14,6 @@ echo FLOATING_RANGE=141.10.10.196/26 >> local.conf
 echo FIXED_RANGE=10.11.12.0/24 >> local.conf
 echo FIXED_NETWORK_SIZE=256 >> local.conf
 echo NOVA_REPO=https://github.com/BeyondTheClouds/nova.git >> local.conf
-echo NOVA_BRANCH=discovery_integration >> local.conf
-echo RECLONE=yes >> local.conf
+echo NOVA_BRANCH=disco/mitaka >> local.conf
+echo RECLONE=no >> local.conf
 ./stack.sh
