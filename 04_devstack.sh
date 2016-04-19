@@ -19,4 +19,10 @@ echo FIXED_NETWORK_SIZE=256 >> local.conf
 echo NOVA_REPO=https://github.com/BeyondTheClouds/nova >> local.conf
 echo NOVA_BRANCH=disco/mitaka >> local.conf
 echo RECLONE=no >> local.conf
+
+sudo service redis-server stop
+sudo rm /var/lib/redis/dump.rdb
+sudo service redis-server start
+
+./unstack.sh
 ./stack.sh
