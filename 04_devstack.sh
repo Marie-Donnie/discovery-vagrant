@@ -8,7 +8,7 @@ set -x
 cd /devstack
 
 cat > local.conf <<- EOM
-'[[local|localrc]]'
+[[local|localrc]]
 ADMIN_PASSWORD=admin
 DATABASE_PASSWORD=admin
 RABBIT_PASSWORD=admin
