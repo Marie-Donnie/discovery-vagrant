@@ -19,9 +19,7 @@ mkdir -p /etc/rome
 popd
 popd
 cp $dir/rome.conf /etc/rome/rome.conf
-mkdir /opt/logs
-chown stack:stack /opt/logs
 
-## redis
-apt-get install -y redis-server
-service redis-server restart
+# rome requires /opt/logs to be writtable.
+#mkdir /opt/logs
+#chown stack:stack /opt/logs
