@@ -5,7 +5,7 @@ development environment.
 
 It is based on ```vagrant```.
 
-The deployments uses [```devstack```](https://devstack.org) to provision the openstack instances.
+The deployment uses [```devstack```](https://devstack.org) to provision the openstack instances.
 It installs [```ROME```](https://github.com/BeyondTheClouds/rome) as well as a ```redis-server``` instance to serve as database backend.
 
 
