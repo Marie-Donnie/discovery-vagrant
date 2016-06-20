@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ## nfs server (speed up the clone)
+export DEBIAN_FRONTEND=noninteractive
 apt-get install -y nfs-kernel-server
 cat > /etc/exports <<- EOM
 /opt/stack/cinder *(rw,sync,no_subtree_check,no_root_squash)

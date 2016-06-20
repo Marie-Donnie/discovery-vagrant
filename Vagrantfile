@@ -2,6 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
+  config.ssh.forward_agent = true
   config.vm.box = "box-cutter/ubuntu1404"
 
   config.vm.define "pop0" do |pop|
