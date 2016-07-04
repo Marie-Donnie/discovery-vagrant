@@ -17,7 +17,7 @@ apt-get -y update
 apt-get install -y python-pip python-dev git
 # get rome
 pushd /tmp
-git clone https://github.com/BeyondTheClouds/rome.git
+git clone https://github.com/Marie-Donnie/rome.git
 pushd rome
 python setup.py install
 
