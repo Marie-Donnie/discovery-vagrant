@@ -24,6 +24,10 @@ NOVA_BRANCH=disco/mitaka
 RECLONE=no
 EOM
 
+# clone only the required branch to save time
+# see https://bugs.launchpad.net/devstack/+bug/1412244
+sed -i 's/git_timed clone $git_clone_flags $git_remote $git_dest$/& -b $git_ref/' functions-common
+
 sudo service redis-server stop
 sudo rm /var/lib/redis/dump.rdb
 sudo service redis-server start
