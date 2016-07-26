@@ -22,6 +22,8 @@ GIT_DEPTH=1
 NOVA_REPO=https://github.com/BeyondTheClouds/nova
 NOVA_BRANCH=disco/mitaka
 RECLONE=no
+enable_plugin rally https://github.com/openstack/rally master
+
 # Discovery configurations
 [[post-config|$NOVA_CONF]]
 [discovery]
