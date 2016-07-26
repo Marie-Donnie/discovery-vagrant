@@ -22,6 +22,11 @@ GIT_DEPTH=1
 NOVA_REPO=https://github.com/BeyondTheClouds/nova
 NOVA_BRANCH=disco/mitaka
 RECLONE=no
+# Discovery configurations
+[[post-config|$NOVA_CONF]]
+[discovery]
+db_backend = redis
+gen_logs = False
 EOM
 
 # clone only the required branch to save time

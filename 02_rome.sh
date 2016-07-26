@@ -29,5 +29,6 @@ popd
 cp $dir/rome.conf /etc/rome/rome.conf
 
 # rome requires /opt/logs to be writtable.
-#mkdir /opt/logs
-#chown stack:stack /opt/logs
+mkdir /opt/logs
+chown stack:stack /opt/logs
+chmod -R a+w /opt/logs
