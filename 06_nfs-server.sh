@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## remove debconf noise in output logs
+export DEBIAN_FRONTEND=noninteractive
+
 ## nfs server (speed up the clone)
 apt-get install -y nfs-kernel-server
 cat > /etc/exports <<- EOM
