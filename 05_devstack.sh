@@ -25,7 +25,7 @@ RECLONE=no
 enable_plugin rally https://github.com/openstack/rally master
 
 # Discovery configurations
-[[post-config|$NOVA_CONF]]
+[[post-config|\$NOVA_CONF]]
 [discovery]
 db_backend = redis
 gen_logs = False
