@@ -2,6 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
+
   config.vm.box = "bento/ubuntu-18.04"
 
   config.vm.define "pop0" do |pop|
